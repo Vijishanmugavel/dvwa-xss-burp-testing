@@ -32,11 +32,10 @@ A Reflected XSS vulnerability was tested by injecting a script payload into the 
 ## 📸 Screenshots
 
 ### 🔹 XSS Payload Execution
-![XSS Popup](screenshots/DVWA_XSS_Alert_Popup.png)
+![XSS Popup](2/DVWA_XSS_Alert_Popup.png)
 
 ### 🔹 Intercepted Request in Burp Suite
-![Burp Request](screenshots/BurpSuite_XSS_Request_Intercept.png)
-
+![Burp Request](2/BurpSuite_XSS_Request_Intercept.png)
 ---
 
 ## 🧠 Key Learnings
