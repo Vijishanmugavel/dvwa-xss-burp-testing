@@ -29,15 +29,6 @@ A Reflected XSS vulnerability was tested by injecting a script payload into the 
 
 ---
 
-## 📸 Screenshots
-
-### 🔹 XSS Payload Execution
-![XSS Popup](2/DVWA_XSS_Alert_Popup.png)
-
-### 🔹 Intercepted Request in Burp Suite
-![Burp Request](2/BurpSuite_XSS_Request_Intercept.png)
----
-
 ## 🧠 Key Learnings
 - How XSS vulnerabilities occur due to improper input validation  
 - How HTTP requests can be intercepted and analyzed  
