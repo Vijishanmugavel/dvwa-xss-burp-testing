@@ -1,15 +1,12 @@
-# 🔐 Web Application Security Testing using DVWA & Burp Suite
+# 🔐 Web Application Security Testing using DVWA & Burp Suite (XSS Analysis)
 
 ## 📌 Overview
-This project demonstrates hands-on web application security testing using Damn Vulnerable Web Application (DVWA) and Burp Suite in a controlled lab environment.
-
-The objective was to understand how web vulnerabilities occur and how they can be analyzed using real-world security tools.
+This project demonstrates hands-on web application security testing using Damn Vulnerable Web Application (DVWA) and Burp Suite in a controlled lab environment. The objective was to understand how client-side vulnerabilities occur and how they can be analyzed using real-world security tools.
 
 ---
 
-## 🧪 Key Focus: Reflected Cross-Site Scripting (XSS)
-
-A Reflected XSS vulnerability was tested by injecting a script payload into the application and observing how improper input validation leads to script execution in the browser.
+## 🧪 Scenario
+A Reflected Cross-Site Scripting (XSS) vulnerability was tested by injecting a script payload into a web application. The application failed to properly sanitize user input, resulting in script execution in the browser.
 
 ---
 
@@ -25,15 +22,36 @@ A Reflected XSS vulnerability was tested by injecting a script payload into the 
 - Configured Burp Suite as an intercepting proxy  
 - Performed Reflected XSS testing using a sample payload  
 - Intercepted and analyzed HTTP requests using Burp Suite  
-- Observed how user input is processed by the application  
+- Observed how user input is processed and reflected in the response  
+
+---
+
+## 📸 Screenshots
+
+### 🔹 XSS Payload Input (DVWA)
+![XSS Input](DVWA_XSS_Reflected_Input.png)
+
+### 🔹 XSS Execution (Alert Popup)
+![XSS Popup](DVWA_XSS_Alert_Popup.png)
+
+### 🔹 HTTP Request Interception (Burp Suite)
+![Burp Intercept](BurpSuite_XSS_Request_Intercept.png)
+
+---
+
+## 🧠 Key Findings
+- User input was reflected without proper sanitization  
+- Script payload executed successfully in the browser  
+- HTTP request captured in Burp Suite confirmed payload transmission  
+- Demonstrates how Reflected XSS vulnerabilities occur in web applications  
 
 ---
 
 ## 🧠 Key Learnings
-- How XSS vulnerabilities occur due to improper input validation  
-- How HTTP requests can be intercepted and analyzed  
-- Practical use of Burp Suite for web security testing  
-- Importance of secure coding practices in web applications  
+- How Reflected XSS vulnerabilities work  
+- Importance of input validation and output encoding  
+- How to intercept and analyze HTTP requests using Burp Suite  
+- Understanding client-server interaction in web applications  
 
 ---
 
